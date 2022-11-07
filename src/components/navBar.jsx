@@ -2,27 +2,53 @@ import React from "react";
 import logo from "../assets/gods_logo.svg";
 import "./navBar.css";
 import menuicon from "../assets/menu.svg";
+import { NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="container nav nav--flex">
-      <a href="#">
+      <NavLink to="/">
         <img className="icon" src={logo} alt="gods_logo"></img>
-      </a>
+      </NavLink>
       <ul className="list list__items token token--greyscale">
         <li className="list__item active">
-          <a href="#">Home</a>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : undefined)}
+          >
+            Home
+          </NavLink>
         </li>
         <li className="list__item">
-          <a href="#">Rosters</a>
+          <NavLink
+            to="rosters"
+            className={({ isActive }) => (isActive ? "active" : undefined)}
+          >
+            Rosters
+          </NavLink>
         </li>
         <li className="list__item">
-          <a href="#">Achievements</a>
+          <NavLink
+            to="achievements"
+            className={({ isActive }) => (isActive ? "active" : undefined)}
+          >
+            Achievements
+          </NavLink>
         </li>
         <li className="list__item">
-          <a href="#">About us</a>
+          <NavLink
+            to="about"
+            className={({ isActive }) => (isActive ? "active" : undefined)}
+          >
+            About us
+          </NavLink>
         </li>
         <li className="list__item">
-          <a href="#">Contact us</a>
+          <NavLink
+            to="contact"
+            className={({ isActive }) => (isActive ? "active" : undefined)}
+          >
+            Contact us
+          </NavLink>
         </li>
       </ul>
       <span>
