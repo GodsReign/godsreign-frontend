@@ -1,0 +1,29 @@
+.livebar {
+  padding: 0.7rem 0;
+  color: white;
+  display: flex;
+}
+.livebar--flex {
+  justify-content: space-between;
+  align-items: center;
+}
+.list__items {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.list__item {
+  margin: 0 0.7rem;
+}
+
+.bg-dark {
+  background: #262626;
+}
+
+.livebar__header {
+  display: flex;
+}
+.livebar__heading {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}

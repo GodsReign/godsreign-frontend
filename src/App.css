@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+/* Normalize.css */
+@import url(normalize.css);
+
+/* Typography Imports */
+@import url(/src/assets/fonts/primary/primaryFonts.css);
+@import url(/src/assets/fonts/secondary/secondaryFonts.css);
+
+html {
+  font-size: 62.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+:root {
+  font-family: "TeXGyreAdventor", "Poppins", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  --color-primary: #dda34e;
+  --gods-color: linear-gradient(180deg, #161621 0%, #080811 100%);
+}
+h1,
+h2,
+h3,
+p,
+body,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 1.4rem;
+  line-height: 1.5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
 }
