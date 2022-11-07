@@ -42,3 +42,62 @@ body {
   max-width: 1110px;
   margin: 0 auto;
 }
+
+/* icons */
+.icon {
+  width: 64px;
+  height: 64px;
+}
+.icon--primary {
+  background: var(--color-primary);
+}
+.icon--small {
+  width: 48px;
+  height: 48px;
+}
+.icon--white {
+  background: #000;
+  opacity: .7;
+  transition: opacity .3s ease-out;
+  cursor: pointer;
+}
+.icon--white:hover{
+  opacity: 1;
+}
+/* Lists */
+
+.list__items {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.list__item {
+  margin: 0 0.7rem;
+  cursor: pointer;
+}
+
+/* buttons */
+
+.btn--primary {
+  background: var(--color-primary);
+}
+
+/* tokens */
+.token {
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.token--greyscale {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Background */
+.bg--gods {
+  background: var(--gods-color);
+}
+
+/* a tag */
+a {
+  color: #fff;
+  text-decoration: none;
+}

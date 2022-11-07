@@ -1,6 +1,7 @@
 import React from "react";
-import "../css/LiveBar.css";
+import "./LiveBar.css";
 import LivePlayers from "./livePlayers";
+import socialIcons from "./socialicons";
 function LiveBar() {
   const curPlayers = [
     {
@@ -13,13 +14,7 @@ function LiveBar() {
       img: require("../../assets/livebar-image-1.svg").default,
     },
   ];
-  const socialIcons = [
-    { img: require("../../assets/facebook.svg").default },
-    { img: require("../../assets/instagram.svg").default },
-    { img: require("../../assets/discord.svg").default },
-    { img: require("../../assets/twitter.svg").default },
-    { img: require("../../assets/linkedin.svg").default },
-  ];
+
   return (
     <div className="bg-dark">
       <section className="container livebar livebar--flex">

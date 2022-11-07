@@ -7,14 +7,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.list__items {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-}
-.list__item {
-  margin: 0 0.7rem;
-}
+
 
 .bg-dark {
   background: #262626;
@@ -26,4 +19,10 @@
 .livebar__heading {
   font-weight: 600;
   margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 780px) {
+  .livebar--flex {
+    flex-direction: column;
+  }
 }

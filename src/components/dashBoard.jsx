@@ -4,7 +4,6 @@ import NavBar from "./navBar";
 function DashBoard() {
   return (
     <div>
-      <NavBar />
     </div>
   );
 }
