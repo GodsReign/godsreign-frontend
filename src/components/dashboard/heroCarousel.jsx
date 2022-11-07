@@ -31,9 +31,13 @@ function HeroCarousel() {
                   Pokémon Unite team have successfully Qualified for Taiwan
                   Excellence Gaming Cup 2022
                 </p>
-                <Button className="btn--primary m-2 btn-lg">Read More &gt;</Button>
+                <Button className="btn--primary m-2 btn-lg">
+                  Read More &gt;
+                </Button>
               </header>
-              <img className="" src={item.video} alt="" srcset="" />
+              <span className="tw-p-12">
+                <img className="" src={item.video} alt="" />
+              </span>
             </div>
           </Carousel.Item>
         );
