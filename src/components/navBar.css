@@ -7,6 +7,16 @@
   align-items: center;
 }
 
+@media screen and (max-width: 720px) {
+  .nav .token {
+    flex-direction: column;
+  }
+  .toggle {
+    display: none;
+  }
+}
+
+/* List items */
 .list__item a {
   color: #ffffff;
   opacity: 0.7;

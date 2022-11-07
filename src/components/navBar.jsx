@@ -9,7 +9,7 @@ function Navbar() {
       <NavLink to="/">
         <img className="icon" src={logo} alt="gods_logo"></img>
       </NavLink>
-      <ul className="list list__items token token--greyscale">
+      <ul className="list list__items token token--greyscale toggle">
         <li className="list__item active">
           <NavLink
             to="/"

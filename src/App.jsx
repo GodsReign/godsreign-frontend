@@ -4,7 +4,7 @@ import "./App.css";
 import About from "./components/about/about";
 import Achievements from "./components/achievements/achievements";
 import Contact from "./components/contact/contact";
-import DashBoard from "./components/dashBoard";
+import DashBoard from "./components/dashboard/dashBoard";
 import LiveBar from "./components/LiveBar/liveBar";
 import Navbar from "./components/navBar";
 import Rosters from "./components/rosters/rosters";
@@ -12,10 +12,9 @@ function App() {
   return (
     <div>
       <LiveBar />
-      <section className="bg--gods">
+      <main className="bg--gods">
         <Navbar />
-        <DashBoard />
-      </section>
+      </main>
       <Routes>
         <Route path="/" element={<DashBoard />}></Route>
         <Route path="rosters" element={<Rosters />}></Route>
