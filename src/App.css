@@ -166,6 +166,10 @@ a {
 
 /* slider */
 /* slider */
+.slider{
+  opacity: 1;
+  transition:all .3 ease-in;
+}
 .slider__video {
   width: 100%;
   height: 100%;
