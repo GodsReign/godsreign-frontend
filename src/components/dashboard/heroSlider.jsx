@@ -3,27 +3,19 @@ import videoUrls from "./videoUrls";
 import { motion } from "framer-motion";
 function HeroSlider() {
   const [curIndex, setCurIndex] = useState(0);
-  const [delayAni, setDelayAni] = useState(0);
-  useEffect(() => {
-    setTimeout(() => {
-      setDelayAni(1.5);
-      setCurIndex((curIndex) => (curIndex < 2 ? curIndex + 1 : 0));
-    }, 5000);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setCurIndex((curIndex) => (curIndex > 1 ? 0 : curIndex + 1));
+  //   }, 5000);
 
-    // console.log(curIndex);
-  });
+  //   // console.log(curIndex);
+  // });
   const handleClick = (index) => {
     setCurIndex(index);
   };
-  //console.log(videoUrls);
   return (
-    <div className="container tw-flex tw-flex-col tw-text-white slider">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 1.5 }}
-        className="tw-flex tw-items-center slider "
-      >
+    <div className="container tw-flex tw-flex-col tw-text-white slider ">
+      <motion.div className="tw-flex tw-items-center slider ">
         <header>
           <button className="btn token token--greyscale">
             {videoUrls[curIndex].game}
