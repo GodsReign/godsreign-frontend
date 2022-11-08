@@ -194,6 +194,7 @@ a {
   height: 100%;
   max-width: 45rem;
   max-height: 33rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .slider__active {
@@ -253,6 +254,11 @@ a {
 }
 .shopping-cart--outline {
   background: linear-gradient(156.82deg, #161621 -7.23%, #040407 100.42%);
+  transition: all 0.3s ease-out;
+}
+
+.shopping-cart--outline:hover {
+  transform: scale(1.05);
 }
 
 .shopping-cart__header {
@@ -289,7 +295,9 @@ a {
   font-weight: 700;
   max-width: 28rem;
 }
-
+.partner__logo {
+  transition: all 0.3s;
+}
 @media screen and (max-width: 760px) {
   .partner__section {
     flex-direction: column;
