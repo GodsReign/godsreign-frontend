@@ -25,4 +25,7 @@
   .livebar--flex {
     flex-direction: column;
   }
+  .livebar__header{
+    margin-bottom: 1rem;
+  }
 }

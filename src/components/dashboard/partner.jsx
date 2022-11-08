@@ -14,9 +14,15 @@ function Partner() {
 
   }
   return (
-    <div className="tw-flex tw-items-center tw-mt-24">
+    <div className="tw-flex tw-items-center tw-mt-24 partner__section">
       <h3 className="partner__heading">Official Commercial Partner</h3>
-      <img onMouseOver={(e) => handleMouseOver(e)} onMouseOut={(e)=>handleMouseOut(e)} src={logo} alt="DNA_logo" className="partner__logo" />
+      <img
+        onMouseOver={(e) => handleMouseOver(e)}
+        onMouseOut={(e) => handleMouseOut(e)}
+        src={logo}
+        alt="DNA_logo"
+        className="partner__logo"
+      />
     </div>
   );
 }

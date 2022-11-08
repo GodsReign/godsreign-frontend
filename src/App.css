@@ -229,7 +229,6 @@ a {
 
 @media screen and (max-width: 1110px) {
   .slider {
-    padding: 1rem 3rem;
     flex-wrap: wrap;
   }
 }
@@ -289,6 +288,7 @@ a {
 @media screen and (max-width: 760px) {
   .products {
     margin-top: 8rem;
+    flex-wrap: wrap;
   }
 }
 /* partner */
@@ -302,14 +302,21 @@ a {
   transition: all 0.3s;
   cursor: pointer;
 }
+
 @media screen and (max-width: 760px) {
   .partner__section {
     flex-direction: column;
   }
+  .partner__heading{
+    text-align: center;
+  }
+  .products__heading{
+    left:7rem
+  }
 }
 
 /* swiperJs */
-.swiper .swiper-wrapper{
+.swiper .swiper-wrapper {
   padding-left: 1rem;
 }
 .swiper .swiper-button-next,

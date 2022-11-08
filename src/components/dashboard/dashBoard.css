@@ -13,10 +13,17 @@
 
 .carousel__heading {
   margin: 1rem 0;
+
 }
 
 .carousel__content {
   margin: 1rem 0;
+}
+
+@media screen and (max-width:760px) {
+  .carousel__heading{
+    font-size: 5rem;
+  }
 }
 
 /* slider */
