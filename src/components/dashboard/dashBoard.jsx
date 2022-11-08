@@ -9,9 +9,9 @@ function DashBoard() {
   return (
     <div className="container">
       <HeroSlider />
-      <section className="tw-flex tw-justify-between">
+      <section className="tw-flex tw-justify-between partner__section">
         <Partner />
-        <section className="tw-flex tw-relative">
+        <section className="products tw-flex tw-relative">
           <h3 className="products__heading tw-absolute ">Our Products</h3>
           <Products img={jerseyBlack} />
           <Products img={jerseyGold} />
