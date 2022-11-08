@@ -195,6 +195,7 @@ a {
   max-width: 45rem;
   max-height: 33rem;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .slider__active {
@@ -236,6 +237,7 @@ a {
 .slider__btn {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .slider .token,
@@ -251,6 +253,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 }
 .shopping-cart--outline {
   background: linear-gradient(156.82deg, #161621 -7.23%, #040407 100.42%);
@@ -297,9 +300,59 @@ a {
 }
 .partner__logo {
   transition: all 0.3s;
+  cursor: pointer;
 }
 @media screen and (max-width: 760px) {
   .partner__section {
     flex-direction: column;
   }
+}
+
+/* swiperJs */
+.swiper .swiper-wrapper{
+  padding-left: 1rem;
+}
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  color: #fff;
+}
+
+.swiper .swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: static !important;
+  background: var(--color-primary);
+  width: 20rem !important;
+  margin: 0 auto;
+}
+/* division-card */
+
+.division-card {
+  width: 100%;
+  max-width: 260px;
+}
+
+.division__logo {
+  right: 90px;
+  bottom: 10px;
+}
+.division__heading-back {
+  color: var(--color-primary);
+  text-align: center;
+  font-size: 3.4rem;
+  font-weight: 700;
+  padding: 2rem;
+}
+
+.division__heading-back::after {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  right: 28rem;
+  top: -4rem;
+  opacity: 10%;
+  font-size: 9rem;
+  text-shadow: 0 0 2px #fff;
+  font-weight: 700;
+  content: "Our Division";
+  color: #000;
 }

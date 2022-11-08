@@ -13,10 +13,12 @@ import Rosters from "./components/rosters/rosters";
 function App() {
   return (
     <div>
-      <LiveBar />
-      <main className="bg--gods">
-        <Navbar />
-      </main>
+      <section className="tw-sticky">
+        <LiveBar />
+        <main className="bg--gods">
+          <Navbar />
+        </main>
+      </section>
       <Routes>
         <Route path="/" element={<DashBoard />}></Route>
         <Route path="rosters" element={<Rosters />}></Route>

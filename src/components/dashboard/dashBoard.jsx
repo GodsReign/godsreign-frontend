@@ -5,6 +5,7 @@ import HeroSlider from "./heroSlider";
 import jerseyBlack from "../../assets/jerseyBlack.png";
 import jerseyGold from "../../assets/jerseyGold.png";
 import Partner from "./partner";
+import OurDivision from "./ourDivision";
 function DashBoard() {
   return (
     <div className="container">
@@ -16,6 +17,9 @@ function DashBoard() {
           <Products img={jerseyBlack} />
           <Products img={jerseyGold} />
         </section>
+      </section>
+      <section className="tw-pt-12">
+        <OurDivision />
       </section>
     </div>
   );

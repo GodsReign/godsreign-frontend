@@ -25,7 +25,7 @@ function HeroSlider() {
             <p className="carousel__content">{videoUrls[curIndex].content}</p>
           </section>
           <button className="btn btn--primary btn--gradient btn--large slider__btn tw-rounded-lg">
-            <label htmlFor="arrow">Read More</label>
+            <span>Read More</span>
             <span className="btn--background">
               <img
                 className="btn__arrow"
