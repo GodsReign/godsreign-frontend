@@ -19,7 +19,7 @@ html {
     BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
     "Open Sans", "Helvetica Neue", sans-serif;
   --color-primary: #dda34e;
-  --gods-color: linear-gradient(180deg, #161621 0%, #080811 100%);
+  --gods-color: #0d0e0f;
 }
 h1,
 h2,
@@ -77,7 +77,6 @@ body {
   opacity: 1;
 }
 
-
 /* Lists */
 
 .list__items {
@@ -94,9 +93,43 @@ body {
 .btn {
   border: 0;
   outline: 0;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.5;
 }
 .btn--primary {
   background: var(--color-primary);
+}
+.btn--gradient {
+  background: linear-gradient(92.32deg, #dda34e 0.41%, #ab6600 106.39%);
+  color: #fff;
+}
+
+.btn--large {
+  padding: 1rem 3rem;
+  transition: all 0.2s;
+}
+.btn--large:hover {
+  padding-right: 4rem;
+}
+
+.btn--large:hover .btn--background {
+  translate: 10px;
+}
+
+.btn__arrow {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.btn--background {
+  margin-left: 4px;
+  padding: 0.2rem;
+  border-radius: 40%;
+  background: rgba(255, 255, 255, 0.16);
+  transition: all 0.2s;
 }
 
 /* tokens */
@@ -107,6 +140,11 @@ body {
 .token--greyscale {
   background: rgba(255, 255, 255, 0.15);
   color: #fff;
+  transition: all 0.3s;
+}
+
+.slider .token--greyscale:hover {
+  transform: scale(1.1);
 }
 
 /* Background */
@@ -124,4 +162,41 @@ a {
 
 .active {
   opacity: 1 !important;
+}
+
+/* slider */
+/* slider */
+.slider__video {
+  width: 100%;
+  height: 100%;
+  max-width: 45rem;
+  max-height: 33rem;
+}
+
+.slider__active {
+  border-bottom: 5px solid var(--color-primary);
+  transform: scale(1.1);
+}
+.slider__thumbnail {
+  width: 100%;
+  height: 100%;
+  max-width: 15rem;
+  max-height: 10rem;
+}
+
+@media screen and (max-width: 1110px) {
+  .slider {
+    padding: 1rem 3rem;
+    flex-wrap: wrap;
+  }
+}
+
+.slider__btn {
+  display: flex;
+  align-items: center;
+}
+
+.slider .token,
+.slider .btn {
+  margin-left: 0;
 }

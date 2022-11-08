@@ -7,6 +7,8 @@ import Contact from "./components/contact/contact";
 import DashBoard from "./components/dashboard/dashBoard";
 import LiveBar from "./components/LiveBar/liveBar";
 import Navbar from "./components/navBar";
+import Playground from "./components/playground/playground";
+import Slider from "./components/playground/slider";
 import Rosters from "./components/rosters/rosters";
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="achievements" element={<Achievements />}></Route>
         <Route path="about" element={<About />}></Route>
         <Route path="contact" element={<Contact />}></Route>
+        <Route path="playground" element={<Playground />}></Route>
+        <Route path="slider" element={<Slider />}></Route>
       </Routes>
     </div>
   );

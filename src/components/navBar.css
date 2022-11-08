@@ -1,6 +1,7 @@
 .nav {
   display: flex;
-  padding: 1.7rem;
+  padding: 1.7rem 1.7rem 7.7rem;
+
 }
 .nav--flex {
   justify-content: space-between;

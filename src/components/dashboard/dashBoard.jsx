@@ -1,10 +1,11 @@
 import React from "react";
-import Hero from "./hero";
+
 import "./dashBoard.css";
+import HeroSlider from "./heroSlider";
 function DashBoard() {
   return (
     <div className="container">
-      <Hero />
+      <HeroSlider />
     </div>
   );
 }
