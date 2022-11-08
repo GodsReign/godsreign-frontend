@@ -238,6 +238,8 @@ a {
 }
 
 /* shopping cart */
+
+
 .shopping-cart {
   width: max-content;
   padding: 1rem 2rem;
@@ -264,4 +266,17 @@ a {
 }
 .shopping-cart .icon{
   align-self: flex-end;
+}
+
+.products__heading{
+  top: -50px;
+  left: 2rem;
+
+}
+
+/* partner */
+.partner__heading,.products__heading{
+  color: #fff;
+  font-weight: 700;
+  max-width: 28rem;
 }

@@ -1,12 +1,7 @@
 import React from "react";
 import "./playground.css";
-import Products from "../dashboard/products";
 const Playground = () => {
-  return (
-    <div>
-      <Products />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Playground;
