@@ -7,6 +7,7 @@ import jerseyGold from "../../assets/jerseyGold.png";
 import Partner from "./partner";
 import OurDivision from "./ourDivision";
 import LatestUpdate from "./latestupdate/latestUpdate";
+import SocialFeed from "./socialFeed/SocialFeed";
 function DashBoard() {
   return (
     <div className="container">
@@ -24,6 +25,9 @@ function DashBoard() {
       </section>
       <section className="tw-pt-28">
         <LatestUpdate />
+      </section>
+      <section className="tw-pt-28">
+        <SocialFeed />
       </section>
     </div>
   );

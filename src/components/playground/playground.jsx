@@ -1,9 +1,10 @@
 import React from "react";
-import "./playground.css";
+import SocialFeed from "../dashboard/socialFeed/SocialFeed";
 const Playground = () => {
   return (
-    <div className="container">
-    </div>
+    <section>
+      <SocialFeed />
+    </section>
   );
 };
 

@@ -62,7 +62,7 @@ body {
 
 @media screen and (max-width: 1110px) {
   .container {
-    padding: 1rem;
+    padding: 2rem;
   }
 }
 /* icons */
@@ -77,8 +77,8 @@ body {
   background: var(--color-primary);
 }
 .icon--small {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
 }
 .icon--white {
   background: #000;
@@ -291,12 +291,12 @@ a {
 @media screen and (max-width: 760px) {
   .products {
     margin-top: 8rem;
-    flex-flow:column wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  .shopping-cart{
+  .shopping-cart {
     margin-bottom: 1rem;
   }
 }
@@ -351,6 +351,7 @@ a {
   bottom: 10px;
 }
 .division__heading-back {
+  text-transform: uppercase;
   color: var(--color-primary);
   text-align: center;
   font-size: 3.4rem;
@@ -359,6 +360,7 @@ a {
 }
 
 .division__heading-back::after {
+  text-transform: uppercase;
   position: absolute;
   display: flex;
   align-items: center;
@@ -403,13 +405,102 @@ a {
   transform: scale(1.05);
   box-shadow: 0 0 10px #fff;
 }
-.latest__header .division__heading-back::after{
-  content:'Latest Update'
+.latest__header .division__heading-back::after {
+  content: "Latest Update";
 }
-@media screen and (max-width:760px) {
-  .latest-update__card{
+@media screen and (max-width: 760px) {
+  .latest-update__card {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+/* Video Player */
+video {
+  height: 100%;
+}
+.video {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.video--large {
+  max-width: 1108px;
+  max-height: 560px;
+  min-height: 480px;
+}
+.video--medium {
+  width: 760px;
+  height: 330px;
+}
+
+.video--small {
+  width: 270px;
+  height: 170px;
+}
+.play__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  background: url("/src/assets/playbtn.svg");
+}
+.play__react__btn {
+  background: url("/src/assets/playbtn.svg");
+}
+
+.latest__video__bottom {
+  width: 100%;
+  max-width: 1108px;
+  height: 130px;
+}
+.latest__video__bottom--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+.latest__video {
+  border-radius: 2rem;
+}
+
+/* social__feed */
+.social__feed__card {
+  width: 100%;
+  max-width: 350px;
+  padding: 9px;
+  border-radius: 1rem;
+  color: #fff;
+  background: #262626;
+  transition: all 0.3s ease;
+}
+
+.social__feed__card:hover {
+  transform: scale(1.03);
+}
+
+.social__feed__content {
+  padding: 1.5rem 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.social__feed__header .division__heading-back::after {
+  content: "Social Feeds";
+}
+.social__feed__card__container {
+  display: flex;
+}
+
+@media screen and (max-width: 760px) {
+  .social__feed__card__container {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
