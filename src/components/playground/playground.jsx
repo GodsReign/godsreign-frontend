@@ -1,9 +1,9 @@
 import React from "react";
-import SocialFeed from "../dashboard/socialFeed/SocialFeed";
+import Footer from "../footer/Footer";
 const Playground = () => {
   return (
     <section>
-      <SocialFeed />
+      <Footer/>
     </section>
   );
 };

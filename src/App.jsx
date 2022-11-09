@@ -10,6 +10,7 @@ import Navbar from "./components/navBar";
 import Playground from "./components/playground/playground";
 import Slider from "./components/playground/slider";
 import Rosters from "./components/rosters/rosters";
+import Footer from "./components/footer/Footer";
 function App() {
   return (
     <div>
@@ -28,6 +29,12 @@ function App() {
         <Route path="playground" element={<Playground />}></Route>
         <Route path="slider" element={<Slider />}></Route>
       </Routes>
+      <section className="tw-mt-36">
+        <div className="footer-hr"></div>
+        <footer className="footer--greyscale">
+          <Footer />
+        </footer>
+      </section>
     </div>
   );
 }
