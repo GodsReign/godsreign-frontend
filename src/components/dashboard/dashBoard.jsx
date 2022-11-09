@@ -6,6 +6,7 @@ import jerseyBlack from "../../assets/jerseyBlack.png";
 import jerseyGold from "../../assets/jerseyGold.png";
 import Partner from "./partner";
 import OurDivision from "./ourDivision";
+import LatestUpdate from "./latestupdate/latestUpdate";
 function DashBoard() {
   return (
     <div className="container">
@@ -18,8 +19,11 @@ function DashBoard() {
           <Products img={jerseyGold} />
         </section>
       </section>
-      <section className="tw-pt-12">
+      <section className="tw-pt-16">
         <OurDivision />
+      </section>
+      <section className="tw-pt-28">
+        <LatestUpdate />
       </section>
     </div>
   );

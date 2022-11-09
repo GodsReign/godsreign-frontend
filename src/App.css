@@ -162,6 +162,9 @@ body {
   transition: all 0.3s;
 }
 
+.token--large {
+  padding: 0.5rem 2rem;
+}
 .slider .token--greyscale:hover {
   transform: scale(1.1);
 }
@@ -288,7 +291,13 @@ a {
 @media screen and (max-width: 760px) {
   .products {
     margin-top: 8rem;
-    flex-wrap: wrap;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .shopping-cart{
+    margin-bottom: 1rem;
   }
 }
 /* partner */
@@ -307,11 +316,11 @@ a {
   .partner__section {
     flex-direction: column;
   }
-  .partner__heading{
+  .partner__heading {
     text-align: center;
   }
-  .products__heading{
-    left:7rem
+  .products__heading {
+    left: 7rem;
   }
 }
 
@@ -358,8 +367,49 @@ a {
   top: -4rem;
   opacity: 10%;
   font-size: 9rem;
-  text-shadow: 0 0 2px #fff;
+  text-shadow: 0 0 5px #fff;
   font-weight: 700;
   content: "Our Division";
   color: #000;
+}
+
+/* latest updates */
+
+.latest {
+  overflow: hidden;
+  width: 100%;
+  max-width: 32rem;
+  transition: all 0.3s ease-out;
+}
+.latest__date {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.latest--greyscale {
+  background: #262626;
+}
+
+.latest .btn--gradient {
+  margin: 1.5rem 0 0;
+}
+.latest__img {
+  transition: all 0.3s;
+}
+.latest__img:hover {
+  transform: scale(1.05);
+}
+
+.latest:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #fff;
+}
+.latest__header .division__heading-back::after{
+  content:'Latest Update'
+}
+@media screen and (max-width:760px) {
+  .latest-update__card{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
