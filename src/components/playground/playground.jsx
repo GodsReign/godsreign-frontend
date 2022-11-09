@@ -1,11 +1,7 @@
 import React from "react";
-import Footer from "../footer/Footer";
+import "../../components/LiveBar/LiveBar.css";
 const Playground = () => {
-  return (
-    <section>
-      <Footer/>
-    </section>
-  );
+  return <></>;
 };
 
 export default Playground;

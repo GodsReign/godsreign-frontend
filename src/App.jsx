@@ -6,7 +6,7 @@ import Achievements from "./components/achievements/achievements";
 import Contact from "./components/contact/contact";
 import DashBoard from "./components/dashboard/dashBoard";
 import LiveBar from "./components/LiveBar/liveBar";
-import Navbar from "./components/navBar";
+import Navbar from "./components/navbar/navBar";
 import Playground from "./components/playground/playground";
 import Slider from "./components/playground/slider";
 import Rosters from "./components/rosters/rosters";

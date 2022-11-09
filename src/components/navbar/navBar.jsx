@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "../assets/gods_logo.svg";
+import logo from "../../assets/gods_logo.svg";
 import "./navBar.css";
-import menuicon from "../assets/menu.svg";
+import menuicon from "../../assets/menu.svg";
 import { NavLink } from "react-router-dom";
 function Navbar() {
   return (
