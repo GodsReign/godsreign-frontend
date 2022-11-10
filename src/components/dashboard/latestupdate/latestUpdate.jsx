@@ -8,7 +8,7 @@ function LatestUpdate() {
       <header className="tw-relative latest__header">
         <h2 className="division__heading-back">Latest Update</h2>
       </header>
-      <section className="tw-flex latest-update__card">
+      <section className="latest-update__card">
         {latestCardData.map((item, index) => (
           <LatestUpdateCard img={item.img} key={index} />
         ))}

@@ -13,9 +13,9 @@ function CustomVideoPlayer(props) {
   return (
     <div className="video video--large tw-relative">
       <video
-        src={props.video}
-        width={props.width}
-        height={props.height}
+        src="images/feed_img.png"
+        // width={props.width}
+        // height={props.height}
         onClick={handlePlayPause}
       ></video>
       {play && <button className="icon icon--small play__btn"></button>}

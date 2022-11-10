@@ -57,13 +57,13 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1110px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (min-width: 1600px) {
   .container {
-    padding: 2rem;
+    max-width: 1440px;
   }
 }
 /* icons */
@@ -200,6 +200,7 @@ a {
   max-height: 33rem;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  border-radius: 1rem;
 }
 
 .slider__active {
@@ -210,7 +211,7 @@ a {
   width: 100%;
   height: 100%;
   max-width: 15rem;
-  max-height: 10rem;
+  border-radius: 1rem;
 }
 
 @keyframes sliderAni {
@@ -257,6 +258,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  border-radius: 1rem;
 }
 .shopping-cart--outline {
   background: linear-gradient(156.82deg, #161621 -7.23%, #040407 100.42%);
@@ -345,11 +347,20 @@ a {
 .division-card {
   width: 100%;
   max-width: 260px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2;
+}
+
+.division-card > img {
+  grid-area: 1/1;
 }
 
 .division__logo {
-  right: 90px;
-  bottom: 10px;
+  grid-area: 1/1;
+  padding-bottom: 1rem;
+  align-self: flex-end;
+  justify-self: center;
 }
 .division__heading-back {
   text-transform: uppercase;
@@ -391,6 +402,11 @@ a {
 .latest--greyscale {
   background: #262626;
 }
+.latest-update__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .latest .btn--gradient {
   margin: 1.5rem 0 0;
@@ -412,8 +428,6 @@ a {
 @media screen and (max-width: 760px) {
   .latest-update__card {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -487,7 +501,7 @@ video {
 .social__feed__content {
   padding: 1.5rem 0.5rem;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.5;
 }
 
@@ -496,12 +510,12 @@ video {
 }
 .social__feed__card__container {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 760px) {
   .social__feed__card__container {
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
   }
 }
@@ -569,4 +583,13 @@ video {
     grid-column: 1;
     align-self: end;
   }
+}
+
+/* Sticky Top */
+
+.top-sticky {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
 }

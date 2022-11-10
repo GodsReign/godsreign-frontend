@@ -6,20 +6,23 @@ import Achievements from "./components/achievements/achievements";
 import Contact from "./components/contact/contact";
 import DashBoard from "./components/dashboard/dashBoard";
 import LiveBar from "./components/LiveBar/liveBar";
-import Navbar from "./components/navbar/navBar";
+import NavBar from "./components/navbar/navBar";
 import Playground from "./components/playground/playground";
 import Slider from "./components/playground/slider";
 import Rosters from "./components/rosters/rosters";
 import Footer from "./components/footer/Footer";
+import Navbar from "react-bootstrap/Navbar";
 function App() {
   return (
     <div>
-      <section className="tw-sticky">
-        <LiveBar />
-        <main className="bg--gods">
-          <Navbar />
-        </main>
-      </section>
+      <Navbar sticky="top" className="top-sticky">
+        <section className="bg-greyscale tw-w-full">
+          <LiveBar />
+        </section>
+        <section className="nav--background tw-w-full">
+          <NavBar />
+        </section>
+      </Navbar>
       <Routes>
         <Route path="/" element={<DashBoard />}></Route>
         <Route path="rosters" element={<Rosters />}></Route>

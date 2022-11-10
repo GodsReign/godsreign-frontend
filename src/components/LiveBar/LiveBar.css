@@ -1,14 +1,16 @@
 .livebar {
+
   padding: 0.7rem 0;
   color: white;
   display: flex;
+  width: 100%;
 }
 .livebar--flex {
   justify-content: space-between;
   align-items: center;
 }
 
-.bg-dark {
+.bg-greyscale {
   background: #262626;
 }
 
@@ -21,37 +23,43 @@
 }
 
 .livebar__player__modal {
-  clip-path: polygon(
-    5% 15%,
-    40.28% 15%,
-    47.34% 6.48%,
-    50.42% 5.59%,
-    53.5% 6.48%,
-    61.72% 15%,
-    95% 15%,
-    100% 20%,
-    100% 95%,
-    95% 100%,
-    85.79% 100%,
-    81.5% 99.75%,
-    70% 100%,
-    5% 100%,
-    0% 95%,
-    0% 20%
-  );
   background: linear-gradient(106.99deg, #161621 -5.01%, #080811 108.73%);
-
   border-radius: 10px;
   height: 100%;
   width: 100%;
-  max-height: 110px;
+  max-height: 115px;
   max-width: 260px;
   display: flex;
-  padding: 2.3rem 1rem 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
 }
+/* Notification */
+
+#notifications {
+  display: block;
+  width: 260px;
+  position: absolute;
+  left: 0;
+  background: #fff;
+  border-radius: 1rem;
+  z-index: 0;
+}
+/* AN ARROW LIKE STRUCTURE JUST OVER THE NOTIFICATIONS WINDOW */
+#notifications:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 0;
+  color: transparent;
+  border: 10px solid #000;
+  border-color: transparent transparent #000;
+  margin-top: -20px;
+  margin-left: 10px;
+}
+
 .player__modal__img {
   width: 70px;
-  height: 80px;
+  height: 90px;
   margin-right: 15px;
   border-radius: 1rem;
 }
@@ -73,6 +81,7 @@
 .livebar__modal {
   display: none;
   position: absolute;
+  margin-top: 1.5rem;
   z-index: 1;
 }
 

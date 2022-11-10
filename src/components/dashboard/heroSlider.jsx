@@ -14,7 +14,7 @@ function HeroSlider() {
     setCurIndex(index);
   };
   return (
-    <div className="container tw-flex tw-flex-col tw-text-white slider ">
+    <div className="tw-flex tw-flex-col tw-text-white slider ">
       <motion.div className="tw-flex tw-items-center slider ">
         <header>
           <button className="btn token token--greyscale">

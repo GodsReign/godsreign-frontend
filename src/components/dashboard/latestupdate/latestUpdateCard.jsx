@@ -1,7 +1,7 @@
 import React from "react";
 import { MdDateRange } from "react-icons/md";
 function LatestUpdateCard(props) {
-  console.log(props);
+  // console.log(props);
   return (
     <section className=" tw-text-white  tw-rounded-xl latest latest--greyscale tw-m-6">
       <img className="latest__img" src={props.img} alt="latest__news" />

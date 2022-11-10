@@ -7,19 +7,19 @@ function DivisionCard() {
   const [move, setMove] = useState(false);
   return (
     <section
-      className="division-card tw-relative "
+      className="division-card "
       onMouseOver={() => setMove(true)}
       onMouseOut={() => setMove(false)}
     >
       <img
-        className={move ? "tw-blur-sm tw-rounded-xl" : "tw-rounded-xl"}
+        className={move ? " tw-blur-sm tw-rounded-xl" : "tw-rounded-xl"}
         src={move ? division_blur : division_img}
         alt="division_img"
       />
       <motion.div
         animate={{ y: move ? -150 : 0 }}
         transition={{ type: "spring", duration: 1, bounce: 0.7 }}
-        className="division__logo tw-absolute"
+        className="division__logo"
       >
         <img src={division_logo} alt="" />
       </motion.div>
