@@ -1,0 +1,20 @@
+.splide__progress {
+  background-color: rgb(238, 199, 199);
+}
+.top_slider {
+  background: #3f3f3f;
+  color: #efefef;
+}
+.content_slide {
+  width: 300px;
+  border: 5px solid white;
+  height: 300px;
+  overflow: hidden;
+}
+.playground {
+  background: #379b08;
+  width: 100%;
+  min-width: 100vw;
+  min-height: 30vh;
+  padding: 5rem;
+}
