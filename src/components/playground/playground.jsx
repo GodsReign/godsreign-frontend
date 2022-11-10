@@ -9,7 +9,6 @@ import "@splidejs/react-splide/css/sea-green";
 // or only core styles
 import "@splidejs/react-splide/css/core";
 import "./playground.css";
-import utilSLide from "./utliSLide";
 import CustomVideoPlayer from "../videoPlayer/CustomVideoPlayer";
 import LiveBarModal from "../LiveBar/LiveBarModal";
 
@@ -45,7 +44,7 @@ const Playground = () => {
     // </section>
     <div>
       <div className="playground container tw-relative">
-        
+
       </div>
       <div>
         <LiveBarModal />
