@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import videoUrls from "./videoUrls";
 import { motion } from "framer-motion";
 function HeroSlider() {
@@ -17,9 +17,9 @@ function HeroSlider() {
     <div className="tw-flex tw-flex-col tw-text-white slider ">
       <motion.div className="tw-flex tw-items-center slider ">
         <header>
-          <button className="btn token token--greyscale">
+          <span className="token token--greyscale">
             {videoUrls[curIndex].game}
-          </button>
+          </span>
           <section className="tw-pb-8 tw-pt-8 ">
             <h2 className="carousel__heading">{videoUrls[curIndex].heading}</h2>
             <p className="carousel__content">{videoUrls[curIndex].content}</p>

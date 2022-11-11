@@ -1,13 +1,12 @@
 import React from "react";
 import DivisionSlider from "./divisionSlider";
+import SectionHeader from "../sectionHeader";
 function OurDivision() {
   return (
-    <div>
-      <header className="tw-relative">
-        <h2 className="division__heading-back">Our Division</h2>
-      </header>
+    <section>
+      <SectionHeader text={"Our Division"} />
       <DivisionSlider />
-    </div>
+    </section>
   );
 }
 

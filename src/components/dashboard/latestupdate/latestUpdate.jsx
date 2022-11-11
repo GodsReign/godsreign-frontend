@@ -1,13 +1,11 @@
 import React from "react";
-
+import SectionHeader from "../sectionHeader";
 import latestCardData from "./latestCardData";
 import LatestUpdateCard from "./latestUpdateCard";
 function LatestUpdate() {
   return (
     <section className="latest-update">
-      <header className="tw-relative latest__header">
-        <h2 className="division__heading-back">Latest Update</h2>
-      </header>
+      <SectionHeader text={'Latest Update'} />
       <section className="latest-update__card">
         {latestCardData.map((item, index) => (
           <LatestUpdateCard img={item.img} key={index} />

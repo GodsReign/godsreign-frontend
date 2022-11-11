@@ -1,5 +1,5 @@
 import React from "react";
-import Cart from "./cart";
+import Cart from "../cart";
 function Products(props) {
   return (
     <section className="shopping-cart shopping-cart--outline tw-ml-8">

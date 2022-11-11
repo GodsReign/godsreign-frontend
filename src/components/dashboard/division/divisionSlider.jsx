@@ -15,7 +15,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import "../../App.css";
+// import "../../App.css";
 import { useState, useEffect } from "react";
 import DivisionCard from "./divisioncard";
 import divisionCardData from "./divisionCardData";
@@ -50,7 +50,7 @@ const DivisionSlider = () => {
       {divisionCardData.map((item, index) => {
         return (
           <SwiperSlide className="tw-pb-12" key={index}>
-            <DivisionCard />
+            <DivisionCard item={item} />
           </SwiperSlide>
         );
       })}

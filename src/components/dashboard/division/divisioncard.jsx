@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import division_img from "../../assets/division_slider.png";
-import division_logo from "../../assets/division_slider_logo.svg";
-import division_blur from "../../assets/divSliderBlur.png";
 import { motion } from "framer-motion";
-function DivisionCard() {
+function DivisionCard(props) {
+  //console.log(props.item);
+  const { division_background, division_logo, division_img } = props.item;
   const [move, setMove] = useState(false);
   return (
     <section
@@ -13,7 +12,7 @@ function DivisionCard() {
     >
       <img
         className={move ? " tw-blur-sm tw-rounded-xl" : "tw-rounded-xl"}
-        src={move ? division_blur : division_img}
+        src={move ? division_background : division_img}
         alt="division_img"
       />
       <motion.div

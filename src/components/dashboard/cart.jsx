@@ -4,7 +4,7 @@ import { FaShoppingCart } from "react-icons/fa";
 function Cart() {
   return (
     <div className="icon icon--container icon--primary">
-      <FaShoppingCart className="tw-text-white tw-inline-block" size="2rem" />
+      <FaShoppingCart className="tw-text-white tw-inline-block" size="1.5rem" />
     </div>
   );
 }
