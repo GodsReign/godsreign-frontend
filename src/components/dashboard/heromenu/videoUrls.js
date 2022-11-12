@@ -1,6 +1,6 @@
-import video1 from "../../assets/video.png";
-import video2 from "../../assets/winner.png";
-import video3 from "../../assets/video3.png";
+const video1 = "images/video.png";
+const video2 = "images/winner.png";
+const video3 = "images/video3.png";
 const videoUrls = [
   {
     id: 0,

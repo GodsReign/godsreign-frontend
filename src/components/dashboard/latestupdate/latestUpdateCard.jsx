@@ -24,11 +24,7 @@ function LatestUpdateCard(props) {
         <button className="btn btn--primary btn--gradient slider__btn tw-rounded-lg">
           <span>Read More</span>
           <span className="btn--background">
-            <img
-              className="btn__arrow"
-              src={require("../../../assets/greater.svg").default}
-              alt=""
-            />
+            <img className="btn__arrow" src={"images/greater.svg"} alt="" />
           </span>
         </button>
       </section>

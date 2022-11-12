@@ -8,7 +8,7 @@ import DashBoard from "./components/dashboard/dashBoard";
 import LiveBar from "./components/LiveBar/liveBar";
 import NavBar from "./components/navbar/navBar";
 import Playground from "./components/playground/playground";
-import Slider from "./components/playground/slider";
+
 import Rosters from "./components/rosters/rosters";
 import Footer from "./components/footer/Footer";
 import Navbar from "react-bootstrap/Navbar";
@@ -30,7 +30,6 @@ function App() {
         <Route path="about" element={<About />}></Route>
         <Route path="contact" element={<Contact />}></Route>
         <Route path="playground" element={<Playground />}></Route>
-        <Route path="slider" element={<Slider />}></Route>
       </Routes>
       <section className="tw-mt-36">
         <div className="footer-hr"></div>

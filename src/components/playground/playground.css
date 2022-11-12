@@ -12,9 +12,59 @@
   overflow: hidden;
 }
 .playground {
-  background: #379b08;
   width: 100%;
   min-width: 100vw;
   min-height: 30vh;
   padding: 5rem;
+  padding-top: 19rem;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  margin: 0;
+  padding-top: 5rem;
+}
+.mySwiper2 {
+  padding-top:1rem ;
+  color: #fff;
+}
+
+.swiper-wrapper .slider-thumbnail-container {
+  max-width: 15rem;
+  opacity: 0.4;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: start;
+}
+.hero-progress-bar ,.slider__thumbnail{
+  grid-area:  1 / 1;
+}
+
+
+.slider-thumbnail-container .hero-progress-bar {
+
+  align-self: flex-end;
+  z-index: 1;
+
+}
+
+.slider-thumbnail-container.swiper-slide-thumb-active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.progress__bar__container {
+}
+
+@media screen and (max-width: 600px) {
+  .mySwiper {
+    display: none;
+  }
+
+  /* .hero-progress-bar > .progress__bar__container {
+    opacity: 1 !important;
+  } */
 }

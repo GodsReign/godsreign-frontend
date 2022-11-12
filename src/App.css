@@ -19,6 +19,7 @@ html {
     BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
     "Open Sans", "Helvetica Neue", sans-serif;
   --color-primary: #dda34e;
+
   --gods-color: #0d0e0f;
 }
 h1,
@@ -197,13 +198,11 @@ a {
   max-height: 33rem;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  border-radius: 1rem;
+  margin: 2rem;
+  border-radius: 2rem;
+  z-index: 2;
 }
 
-.slider__active {
-  border-bottom: 5px solid var(--color-primary);
-  transform: scale(1.1);
-}
 .slider__thumbnail {
   width: 15rem;
   height: 10rem;
@@ -214,27 +213,12 @@ a {
   transform: scale(1.1);
 }
 
-@keyframes sliderAni {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0.5;
-  }
-  25% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.slider__ani {
-  animation: sliderAni 5s ease-out infinite;
-}
-
 @media screen and (max-width: 1110px) {
   .slider {
     flex-wrap: wrap;
+  }
+  .slider__video {
+    margin: 2rem 0;
   }
 }
 
