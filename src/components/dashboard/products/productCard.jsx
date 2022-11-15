@@ -2,7 +2,7 @@ import React from "react";
 import Cart from "../cart";
 function Products(props) {
   return (
-    <section className="shopping-cart shopping-cart--outline tw-ml-8">
+    <section className="shopping-cart shopping-cart--outline ">
       <img src={props.img} alt="black_jersey" className="shopping-cart__img" />
       <section className="shopping-cart__header">
         <h4 className="tw-text-white">Home Jersey 2022-23</h4>

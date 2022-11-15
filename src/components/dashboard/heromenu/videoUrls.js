@@ -1,5 +1,4 @@
 const video1 = "images/video.png";
-const video2 = "images/winner.png";
 const video3 = "images/video3.png";
 const videoUrls = [
   {
@@ -12,7 +11,7 @@ const videoUrls = [
   },
   {
     id: 1,
-    video: video2,
+    video: video3,
     game: "Volarant",
     heading: "Japan Excellence Gaming Cup 2022",
     content:
@@ -20,7 +19,7 @@ const videoUrls = [
   },
   {
     id: 2,
-    video: video3,
+    video: video1,
     game: "Fire Fire",
     heading: "Europe Excellence Gaming Cup 2022",
     content: `Fire Fire team have successfully Qualified for Taiwan Excellence Gaming Cup 2022`,

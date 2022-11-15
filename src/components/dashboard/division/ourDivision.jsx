@@ -3,7 +3,7 @@ import DivisionSlider from "./divisionSlider";
 import SectionHeader from "../sectionHeader";
 function OurDivision() {
   return (
-    <section>
+    <section className="division--container">
       <SectionHeader text={"Our Division"} />
       <DivisionSlider />
     </section>

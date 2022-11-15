@@ -15,7 +15,7 @@ function LiveBarModal() {
             Gods - <span className="name__gold">Vibhor</span>
           </h4>
           <p className="tw-opacity-80 tw-mb-3">133k Watching</p>
-          <button className="btn token token--greyscale ">Watch now</button>
+          <button className="token token--greyscale ">Watch now</button>
         </section>
       </section>
     </div>

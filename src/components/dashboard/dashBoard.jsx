@@ -8,13 +8,13 @@ import SocialFeed from "./socialFeed/SocialFeed";
 import OurProducts from "./products/ourProducts";
 function DashBoard() {
   return (
-    <div className="container tw-pt-10">
-      <HeroSlider />
-      <section className="tw-flex tw-justify-between partner__section">
+    <div className="container tw-pt-10 ">
+      <section className="dashboard__hero__grid">
+        <HeroSlider />
         <Partner />
         <OurProducts />
       </section>
-      <section className="tw-pt-36">
+      <section className="">
         <OurDivision />
       </section>
       <section className="tw-pt-36">

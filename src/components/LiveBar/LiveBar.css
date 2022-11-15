@@ -1,5 +1,4 @@
 .livebar {
-
   padding: 0.7rem 0;
   color: white;
   display: flex;
@@ -75,16 +74,21 @@
 .player__modal__content .token {
   margin: 0;
   padding: 5px 10px;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
-.list__item:hover + .livebar__modal {
+/* .list__item:hover + .livebar__modal {
   display: block;
-}
+} */
 .livebar__modal {
   display: none;
   position: absolute;
   margin-top: 1.5rem;
   z-index: 1;
+}
+.livebar__modal__display {
+  display: block;
 }
 
 @media screen and (max-width: 780px) {

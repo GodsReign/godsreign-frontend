@@ -38,7 +38,7 @@ const DivisionSlider = () => {
 
         360: {
           slidesPerView: 1,
-          spaceBetween: 20,
+          spaceBetween: 0,
         },
       }}
       navigation

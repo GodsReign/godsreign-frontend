@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -13,21 +13,23 @@ import videoUrls from "./videoUrls";
 import HeroSliderCard from "./heroSliderCard";
 import ProgressBar from "./progressBar";
 
-export default function HeroSliderTest() {
+const HeroSliderTest = () => {
+  useEffect(() => {}, []);
+
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  console.log(thumbsSwiper);
-  const delay = 10000;
+  //console.log(thumbsSwiper);
+  const delay = 1000000;
   const [isVisible, setVisible] = useState(0);
 
-  console.log(thumbsSwiper);
+  //console.log(thumbsSwiper);
 
   return (
     <>
-      <section>
+      <section className="hero__slider__container">
         <Swiper
           modules={[FreeMode, Navigation, Thumbs, Autoplay]}
           autoplay={{ delay: delay, disableOnInteraction: false }}
-          spaceBetween={10}
+          spaceBetween={2}
           slidesPerView={1}
           navigation={false}
           thumbs={{ swiper: thumbsSwiper }}
@@ -83,4 +85,6 @@ export default function HeroSliderTest() {
       </section>
     </>
   );
-}
+};
+
+export default HeroSliderTest;

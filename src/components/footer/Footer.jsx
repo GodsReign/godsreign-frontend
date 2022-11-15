@@ -20,9 +20,7 @@ function Footer() {
       <div className="copyright">
         <h5>Gods Reign &copy; 2022, All rights reserved</h5>
       </div>
-      <div className="designer">
-        <h5>Designed with ❤️ By RD</h5>
-      </div>
+      <div className="designer">{/* <h5>Designed with ❤️ By RD</h5> */}</div>
     </section>
   );
 }

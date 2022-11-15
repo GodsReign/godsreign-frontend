@@ -6,7 +6,7 @@ function HeroSliderCard(props) {
   //ref={props.myref}>
   const { videoUrls } = props;
   return (
-    <motion.div className="tw-flex tw-items-center slider ">
+    <motion.div className="slider  grid--1x2">
       <header>
         <span className="token token--greyscale">{videoUrls.game}</span>
         <section className="tw-pb-8 tw-pt-8 ">
@@ -21,7 +21,14 @@ function HeroSliderCard(props) {
         </button>
       </header>
 
-      <img className="slider__video" src={videoUrls.video} alt="" />
+      <section className="slider__video__container">
+        <img className="slider__video" src={videoUrls.video} alt="" />
+        <img
+          className="video__play__btn"
+          src="images/playbtn.svg"
+          alt="play_btn"
+        />
+      </section>
     </motion.div>
   );
 }
