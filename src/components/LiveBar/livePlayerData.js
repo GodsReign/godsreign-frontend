@@ -1,14 +1,12 @@
-
-
 const livePlayerData = [
   {
-    img: require("../../assets/livebar-image-1.svg").default,
+    img: "images/livebar-image-1.svg",
   },
   {
-    img: require("../../assets/livebar-image-1.svg").default,
+    img: "images/livebar-image-1.svg",
   },
   {
-    img: require("../../assets/livebar-image-1.svg").default,
+    img: "images/livebar-image-1.svg",
   },
 ];
 
