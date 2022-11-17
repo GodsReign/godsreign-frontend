@@ -3,22 +3,21 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/effect-fade";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
 // import required modules
-import { FreeMode, Navigation, Thumbs, Autoplay } from "swiper";
+import { FreeMode, Navigation, Thumbs, Autoplay, EffectFade } from "swiper";
 import videoUrls from "./videoUrls";
 import HeroSliderCard from "./heroSliderCard";
 import ProgressBar from "./progressBar";
 
 const HeroSliderTest = () => {
-  useEffect(() => {}, []);
-
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   //console.log(thumbsSwiper);
-  const delay = 1000000;
+  const delay = 10000;
   const [isVisible, setVisible] = useState(0);
 
   //console.log(thumbsSwiper);
@@ -27,8 +26,11 @@ const HeroSliderTest = () => {
     <>
       <section className="hero__slider__container">
         <Swiper
-          modules={[FreeMode, Navigation, Thumbs, Autoplay]}
+          modules={[FreeMode, Navigation, Thumbs, Autoplay, EffectFade]}
+          effect="fade"
+          fadeEffect={{ crossFade: true }}
           autoplay={{ delay: delay, disableOnInteraction: false }}
+          speed={1000}
           spaceBetween={2}
           slidesPerView={1}
           navigation={false}
@@ -61,8 +63,9 @@ const HeroSliderTest = () => {
               spaceBetween: 0,
             },
           }}
+          effect="fade"
           watchSlidesProgress={true}
-          modules={[FreeMode, Navigation, Thumbs]}
+          modules={[FreeMode, Navigation, Thumbs,]}
           className="mySwiper"
         >
           {videoUrls.map((item, index) => {

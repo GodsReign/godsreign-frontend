@@ -1,28 +1,36 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import LiveBarModal from "./LiveBarModal";
 
 function LivePlayers(props) {
   const displayRef = useRef();
   const { img, index } = props;
-
-  const addModal = () => {
-    displayRef.current.classList.add("livebar__modal__display");
+  const [isVisible, setVisible] = useState(false);
+  let timer;
+  const addModal = (e) => {
+    setVisible(true);
   };
-
   const removeModal = () => {
-    displayRef.current.classList.remove("livebar__modal__display");
+    //console.log("out");
+    timer = setTimeout(() => (isVisible ? setVisible(false) : null), 5000);
   };
+  useEffect(() => {
+    return () => {
+      clearTimeout(timer);
+    };
+  });
 
   return (
     <section className="" onClick={addModal} onMouseOut={removeModal}>
-      <li className="list__item">
+      <li className="list__item tw-relative">
         <img src={img} alt="gods" id={index}></img>
+        <span className="tw-absolute tw-top-6 tw-left-7 tw-text-sm">🔴</span>
       </li>
       <div
-        className="livebar__modal"
-        ref={displayRef}
-        onMouseOver={addModal}
-        onMouseOut={removeModal}
+        className={
+          isVisible
+            ? "livebar__modal livebar__modal__display"
+            : "livebar__modal tw-hidden"
+        }
       >
         <LiveBarModal />
       </div>

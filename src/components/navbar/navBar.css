@@ -5,10 +5,10 @@
 }
 .nav--background {
   background: linear-gradient(
-    176.62deg,
-    #000000 2.79%,
+    180deg,
+    #000000 1%,
     rgba(0, 0, 0, 0.65) 60.7%,
-    rgba(0, 0, 0, 0) 97.21%
+    rgba(0, 0, 0, 0) 100%
   );
 }
 .nav__container {

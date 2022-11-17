@@ -25,7 +25,10 @@ const ProgressBar = (props) => {
     <div style={Parentdiv} className="progress__bar__container">
       <motion.div
         animate={{ width: width }}
-        transition={{ width: { from: 0, duration: props.duration / 1000 } }}
+        transition={{
+          width: { from: 0, duration: props.duration / 1000 },
+          ease: "linear",
+        }}
         style={Childdiv}
       ></motion.div>
     </div>

@@ -42,7 +42,7 @@ const DivisionSlider = () => {
         },
       }}
       navigation
-      autoplay={{ delay: 10000, disableOnInteraction: false }}
+      autoplay={{ delay: 100000, disableOnInteraction: false }}
       scrollbar={{ draggable: true, color: "white" }}
       onSwiper={(swiper) => {}}
       onSlideChange={() => {}}
