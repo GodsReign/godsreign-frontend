@@ -1,30 +1,32 @@
 import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
-import latestVideoData from "./latestVideoData";
-
 // import required modules
-import { FreeMode, Navigation, Thumbs, Autoplay } from "swiper";
-import HeroSliderCard from "../dashboard/heromenu/heroSliderCard";
-export default function HeroSliderBeta() {
+import { FreeMode, Navigation, Thumbs, Autoplay, EffectFade } from "swiper";
+
+export default function LatestVideoSlider({ latestVideoData }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   //console.log(thumbsSwiper);
   const delay = 10000;
-  const [isVisible, setVisible] = useState(0);
-
   //console.log(thumbsSwiper);
-
+  const [addplay, setPlay] = useState(null);
+  //console.log(addplay);
   return (
     <>
-      <section className="latest-video--container">
+      <section >
         <Swiper
-          modules={[FreeMode, Navigation, Thumbs, Autoplay]}
+          modules={[FreeMode, Navigation, Thumbs, Autoplay, EffectFade]}
+          effect={"fade"}
+          fadeEffect={{ crossFade: true }}
+          speed={1000}
           autoplay={{ delay: delay, disableOnInteraction: false }}
           spaceBetween={10}
           slidesPerView={1}
@@ -34,21 +36,14 @@ export default function HeroSliderBeta() {
         >
           {latestVideoData.map((item, index) => (
             <SwiperSlide key={index}>
-              {({ isActive }) => (
-                <section>
-                  <img
-                    className="video video--large"
-                    src={item.img}
-                    alt={item.heading}
-                  />
-                  <img
-                    className="play__btn"
-                    src="images/playbtn.svg"
-                    alt="playBtn"
-                  />
-                  {isActive ? setVisible(index) : ""}
-                </section>
-              )}
+              <section>
+                <img
+                  className="video video--large"
+                  src={item.img}
+                  alt={item.heading}
+                />
+                <button className="icon icon--large btn__center play__btn"></button>
+              </section>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -75,14 +70,26 @@ export default function HeroSliderBeta() {
             {latestVideoData.map((item, index) => {
               return (
                 <SwiperSlide
-                  className="tw-p-4 slider-thumbnail-container"
+                  className="tw-p-4 slider-thumbnail-container "
                   key={index}
+                  onMouseOver={() => setPlay(index)}
+                  onMouseOut={() => setPlay(null)}
                 >
                   <img
                     src={item.img}
                     alt={item.heading}
                     className="video video--small"
                   />
+                  {addplay === index ? (
+                    <motion.button
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.5, effect: "tween" }}
+                      className="icon icon--small play__btn btn__center tw-translate-x-28"
+                    ></motion.button>
+                  ) : (
+                    ""
+                  )}
                 </SwiperSlide>
               );
             })}
