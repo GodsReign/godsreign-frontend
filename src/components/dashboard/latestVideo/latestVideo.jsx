@@ -1,6 +1,6 @@
 import React from "react";
 import LatestVideoSlider from "./latestVideoSlider";
-import SectionHeader from "../dashboard/sectionHeader";
+import SectionHeader from "../sectionHeader";
 import latestVideoData from "./latestVideoData";
 function LatestVideo() {
   return (

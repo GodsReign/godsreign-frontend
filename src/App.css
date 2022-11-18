@@ -21,6 +21,7 @@ html {
   --color-primary: #dda34e;
 
   --gods-color: #0d0e0f;
+  --bg-image: "";
 }
 h1,
 h2,
@@ -678,23 +679,19 @@ video {
     "hero  hero"
     "partner products";
 }
-.dashboard__hero__grid:before {
-  content: " ";
+
+.hero__bg {
   display: block;
-  position: absolute;
+  height: 80%;
   left: 50%;
-  top: 0;
   margin-left: -50vw;
   margin-right: -50vw;
-
-  width: 100vw;
-  max-width: 100vw;
-  height: 80%;
+  max-width: 94vw;
   opacity: 0.05;
-  background-image: url("./assets/video3.png");
-  background-repeat: no-repeat;
-  /* background-position: 50% 0; */
-  background-size: cover;
+  position: absolute;
+  right: 50%;
+  top: 0;
+  width: 95vw;
   z-index: -1;
 }
 
@@ -799,6 +796,7 @@ video {
 .latest-video--container {
   width: 100%;
   max-width: 1110px;
+  margin: auto;
 }
 .latest-video--container .video--large {
   border-radius: 2rem 2rem 0 0;

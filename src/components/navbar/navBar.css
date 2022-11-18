@@ -1,7 +1,7 @@
 .nav {
   width: 100%;
   display: flex;
-  padding: 1.7rem 1.7rem 7.7rem;
+  padding: 1.7rem 0 7.7rem;
 }
 .nav--background {
   background: linear-gradient(

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -14,17 +15,32 @@ import videoUrls from "./videoUrls";
 import HeroSliderCard from "./heroSliderCard";
 import ProgressBar from "./progressBar";
 
-const HeroSliderTest = () => {
+const HeroSliderTest = ({ handleChange }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   //console.log(thumbsSwiper);
-  const delay = 10000;
+  const delay = 1000000;
   const [isVisible, setVisible] = useState(0);
-
+  const [bg, setBg] = useState("images/video.png");
+  const bgImg = {
+    backgroundImage: `url("/public/${bg}")`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+  };
   //console.log(thumbsSwiper);
+  // const [bg, setBg] = useState(url("images/video3.png"));
 
   return (
     <>
       <section className="hero__slider__container">
+        <motion.div
+          key={isVisible}
+          initial={{ scale: 1 }}
+          animate={{ scale: 1.1 }}
+          transition={{ duration: 1, effect: "tween" }}
+          speed={500}
+          style={bgImg}
+          className="hero__bg"
+        ></motion.div>
         <Swiper
           modules={[FreeMode, Navigation, Thumbs, Autoplay, EffectFade]}
           effect="fade"
@@ -43,6 +59,7 @@ const HeroSliderTest = () => {
                 <section>
                   <HeroSliderCard videoUrls={item} />
                   {isActive ? setVisible(index) : ""}
+                  {isActive ? setBg(item.video) : ""}
                 </section>
               )}
             </SwiperSlide>
@@ -65,7 +82,7 @@ const HeroSliderTest = () => {
           }}
           effect="fade"
           watchSlidesProgress={true}
-          modules={[FreeMode, Navigation, Thumbs,]}
+          modules={[FreeMode, Navigation, Thumbs]}
           className="mySwiper"
         >
           {videoUrls.map((item, index) => {
