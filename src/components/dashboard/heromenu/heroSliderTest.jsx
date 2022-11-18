@@ -18,11 +18,11 @@ import ProgressBar from "./progressBar";
 const HeroSliderTest = ({ handleChange }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   //console.log(thumbsSwiper);
-  const delay = 1000000;
+  const delay = 10000;
   const [isVisible, setVisible] = useState(0);
   const [bg, setBg] = useState("images/video.png");
   const bgImg = {
-    backgroundImage: `url("/public/${bg}")`,
+    backgroundImage: `url("${bg}")`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
   };
